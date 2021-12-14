@@ -21,6 +21,9 @@ defmodule ElWc.MixProject do
   def deps do
     [
       {:flow, "~> 1.0"},
+      {:ex_doc, "~> 0.25"},
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
+      {:credo, "~> 1.0"},
       {:mock, "~> 0.3.0", only: :test}
     ]
   end
